@@ -14,26 +14,65 @@
 */
 
 /* Table Styles */
-
-
+table.programs{
+   /* sizes the table, creates a border, and sets the font */
+   width: 100%;
+   border-width: 15px;
+   border-color: rgb(151, 151, 151);
+   border-style: outset;
+   border-collapse: collapse;
+   font-family: Arial, Verdana, sans-serif;
+}
+tr{
+   height: 25px;
+}
+th, td{
+   /* create the borders for each th and td element */
+   border-width: 1px;
+   border-color: gray;
+   border-style: solid;
+   align-content: top;
+   padding: 5px;
+}
 
 /* Table Caption Styles */
-
-
+caption{
+   /* places the caption at the bottom instead of top
+   of the table */
+   caption-side: bottom;
+   text-align: center;
+}
 
 /* Table Column Styles */
-
-
+col.timeColumn{
+   width: 10%;
+   background-color: rgb(215, 205, 151);
+}
+col.wDayColumns{
+   width: 11%;
+   background-color: rgb(236, 255, 211);
+}
+col.wEndColumns{
+   width: 17%;
+   background-color: rgb(255, 231, 255)
+}
 
 /* Table Header Styles */
-
-
+thead{
+   color: white;
+   background-color: rgb(105, 177, 60);
+}
+thead th:first-of-type{
+   /* only the first th's of thead will be this color */
+   background-color: rgb(153, 86, 7);
+}
+thead th:nth-of-type(7), thead th:nth-of-type(8){
+   /* only the 7th and 8th th's of thead will be this color */
+   background-color: rgb(153, 0, 153);
+}
 
 /* Table Footer Styles */
-
-
-
-
-
-
-
+tfoot{
+   color: white;
+   background-color: black;
+}

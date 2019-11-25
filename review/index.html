@@ -52,14 +52,18 @@
             of our broadcast or download programs from our <a href="#">Podcast</a>. 
             <br />Please refer below for our current morning schedule.</p>
          <table class="programs">
+            <!-- makes a table -->
             <caption>All Times Central</caption>
+            <!-- sets a caption -->
             <colgroup>
-               <col class="timeColumn"></colgroup>
-               <col class="wDayColumns" colspan="5"></colgroup>
-               <col class="wEndColumns" colspan="2"></colgroup>
+               <col class="timeColumn"></col>
+               <col class="wDayColumns" span="5"></col>
+               <col class="wEndColumns" span="2"></col>
             </colgroup>
+            <!-- labels the col groups and how much they'll take up -->
             <thead>
                <tr>
+                  <!-- this row is for the very top -->
                   <th>Time</th>
                   <th>Mon</th>
                   <th>Tue</th>
@@ -71,6 +75,7 @@
                </tr>
             </thead>
             <tbody>
+               <!-- this includes all the content of the table -->
                <tr>
                   <th>5:00</th>
                   <td rowspan="4" colspan="5">Dawn Air</td>
@@ -138,6 +143,7 @@
                </tr>
             </tbody>
             <tfoot>
+               <!-- the message at the bottom of the table -->
                <tr>
                   <td colspan="8">Support your Public Radio Station</td>
                </tr>
